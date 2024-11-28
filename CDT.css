@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+.timer-container {
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 15px solid #fff;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+}
+
+.time-display {
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls input {
+  width: 70px;
+  padding: 8px;
+  margin: 5px;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.controls input:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #ff4b2b;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover {
+  background: #ff416c;
+  transform: translateY(-3px);
+}
+
+.controls button:active {
+  transform: translateY(1px);
+}
